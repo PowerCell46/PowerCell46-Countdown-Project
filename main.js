@@ -74,8 +74,10 @@ function initialize() {
 
         if (currentHours > 0) {
             h2DisplayTime.innerText = `${`${currentHours}`.length === 2 ? currentHours : `0${currentHours}`}:${`${currentMinutes}`.length === 2 ? currentMinutes : `0${currentMinutes}`}:${`${currentSeconds}`.length === 2 ? currentSeconds : `0${currentSeconds}`}`
-        } else {
+        } else if (currentMinutes > 0) {
             h2DisplayTime.innerText = `${`${currentMinutes}`.length === 2 ? currentMinutes : `0${currentMinutes}`}:${`${currentSeconds}`.length === 2 ? currentSeconds : `0${currentSeconds}`}`;
+        } else {
+            h2DisplayTime.innerText = `${`${currentSeconds}`.length === 2 ? currentSeconds : `0${currentSeconds}`}`;
         }
         seconds--;
       }
