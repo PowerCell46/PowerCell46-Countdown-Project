@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Permanent+Marker&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lobster&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Permanent+Marker&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    transition: 2500ms ease-in-out;
+    --white-color: #f5f5f5;
+    --element-background-color: #55c6b1;
+    --element-hover-background-color: #449e8e;
+    --custom-time-button-hover: #2a7d6d;
+}
+
+body {
+    transition: 1200ms ease-in-out;
+    background-image: url("https://wallpapers.com/images/featured/simple-clean-8g9017acqfddycrl.jpg");
+    background-size: cover;
+    overflow: hidden;
+    color: var(--white-color);
+}
+
+#title {
+    padding-top: 5px;
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: 5px;
+    font-size: 60px;
+}
+
+#custom-time {
+    background-color: var(--element-hover-background-color);
+    color: var(--white-color);
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    position: relative;
+    padding: 15px 30px;
+    border: 0px;
+    border-radius: 10px;
+    transition: 400ms ease-in-out;
+}
+
+#custom-time:hover {
+    cursor: pointer;
+    box-shadow: 2px 4px 25px -1px var(--white-color);
+    transform: translate(0px, -10px);
+    background-color: var(--custom-time-button-hover);
+    color: var(--white-color);
+}
+
+#change-theme {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    left: 95%;
+    top: 3.5%;
+    cursor: pointer;
+    transition: 400ms ease-in-out;
+}
+
+#change-theme:hover {
+    transform: translateY(-7px);
+}
+
+div {
+    position: absolute;
+    top: 42%;
+    margin-left: -64px;
+}
+
+label {
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    margin-right: 2px;
+}
+
+input {
+    width: 100px;
+    padding: 16px 8.5px;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Lobster', cursive;
+    border: 0px;
+    border-radius: 8px;
+    letter-spacing: 2px;
+    margin-right: 12px;
+}
+
+h2 {
+    color: var(--white-color);
+    font-family: 'Lobster', cursive;
+    letter-spacing: 15px;
+    font-size: 110px;
+    position: absolute;
+    top: 25%;
+    padding: 15px 15px;
+    border-radius: 10px;
+    transition: 400ms ease-in-out;
+}
+
+h3 {
+    font-family: 'Lobster', cursive;
+    position: absolute;
+    top: 46%;
+    font-size: 110px;
+    color: #990000;
+    transition: 400ms ease-in-out;
+}
+
+nav {
+    margin-top: 26%;
+    margin-left: 15.5%;
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: var(--white-color);
+    border-radius: 14px;
+    font-size: 42px;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 3px;
+    height: 130px;
+    width: 130px;
+    background-color: var(--element-background-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 400ms ease-in-out;
+}
+
+li:hover {
+    cursor: pointer;
+    box-shadow: 2px 4px 25px 7px var(--white-color);
+    transform: translate(0px, -15px);
+    background-color: var(--element-hover-background-color);
+    color: var(--white-color);
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    margin-top: -21%;
+    margin-right: 89%;
+}
+
+.icons a {
+    color: var(--white-color);
+    background-color: var(--element-background-color);
+    width: 60px;
+    height: 60px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    transition: 400ms ease-in-out;
+}
+
+.icons a:hover {
+    box-shadow: 2px 4px 25px 3px var(--white-color);
+    transform: translate(0px, -5px);
+    background-color: var(--element-hover-background-color);
+    color: var(--white-color);
+}
+
+.icons i {
+    font-size: 40px;
+}
+
+
+@media (min-width: 1400px) {
+    .icons {
+        margin-top: -20.5%;
+        margin-right: 91.2%;
+    }
+
+    nav {
+        margin-left: 14.5%;
+    }
+}
