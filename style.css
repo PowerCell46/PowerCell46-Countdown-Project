@@ -7,6 +7,7 @@
     --element-background-color: #55c6b1;
     --element-hover-background-color: #449e8e;
     --custom-time-button-hover: #2a7d6d;
+    --heading-color: -webkit-linear-gradient(135deg, rgb(225, 73, 13), rgb(13, 201, 0))
 }
 
 body {
@@ -22,6 +23,11 @@ body {
     font-family: 'Dancing Script', cursive;
     letter-spacing: 5px;
     font-size: 60px;
+    /* Apply gradient background to the text */
+    background-image: var(--heading-color);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; /* Make the text transparent */
 }
 
 #custom-time {
@@ -104,6 +110,7 @@ h3 {
 }
 
 nav {
+    position: relative;
     margin-top: 26%;
     margin-left: 15.5%;
     display: flex;
@@ -168,7 +175,7 @@ li:hover {
     box-shadow: 2px 4px 25px 3px var(--white-color);
     transform: translate(0px, -5px);
     background-color: var(--element-hover-background-color);
-    color: var(--white-color);
+    color: #3333ff;
 }
 
 .icons i {
@@ -179,10 +186,11 @@ li:hover {
 @media (min-width: 1400px) {
     .icons {
         margin-top: -20.5%;
-        margin-right: 91.2%;
+        margin-right: 90%;
     }
 
     nav {
         margin-left: 14.5%;
+        margin-top: 24.5%;
     }
 }
