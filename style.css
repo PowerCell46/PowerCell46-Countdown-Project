@@ -70,6 +70,11 @@ div {
     margin-left: -5.5%;
 }
 
+.container {
+    margin-top: 5%;
+    margin-right: 0.5%;
+}
+
 label {
     font-family: 'Dancing Script', cursive;
     font-size: 50px;
@@ -94,7 +99,7 @@ h2 {
     letter-spacing: 15px;
     font-size: 180px;
     position: absolute;
-    top: 25.5%;
+    top: 30%;
     padding: 15px 15px;
     border-radius: 10px;
     transition: 400ms ease-in-out;
@@ -214,8 +219,8 @@ li:hover {
     }
 
     h2 {
-        font-size: 200px;
-        top: 26%
+        font-size: 220px;
+        top: 28%
     }
 
     h3 {
@@ -338,5 +343,49 @@ li:hover {
         width: 40px;
         left: 88.3%;
         top: 4.5%;
+    }
+}
+
+@media (max-width: 400px) {
+    #title {
+        margin-left: -8%;
+    }
+
+    #change-theme {
+        top: 5.5%;
+        left: 89%;
+        height: 35px;
+        width: 35px;
+    }
+
+    .icons {
+        margin-top: 52%;
+    }
+
+    nav {
+        margin-top: 8%
+    }
+
+    li {
+        height: 80px;
+        width: 80px;
+    }
+
+    label {
+        font-size: 25px;
+        margin-right: 2px;
+    }
+
+    input {
+        width: 27px;
+    }
+
+    h2 {
+        margin-top: 18%;
+    }
+
+    h3 {
+        margin-top: 18%;
+        font-size: 60px;
     }
 }
