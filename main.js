@@ -105,4 +105,18 @@ function initialize() {
             document.documentElement.style.setProperty("--heading-color", "-webkit-linear-gradient(135deg, rgb(225, 73, 13), rgb(13, 201, 0))");
         }
     });
+
+    let showHiddenIcons = document.getElementById("showHiddenIcons");
+    showHiddenIcons.addEventListener("click", () => {
+        if (document.querySelector("#hiddenIcon").style.display != "flex") {
+            showHiddenIcons.style.transform = "rotate(90deg)";
+            document.querySelectorAll("#hiddenIcon").forEach(el => el.style.display = "flex");
+            document.querySelector(".icons").style.backgroundColor = "rgba(255, 255, 255, 0.4)";
+     
+        } else {
+            showHiddenIcons.style.transform = "rotate(0deg)";
+            document.querySelectorAll("#hiddenIcon").forEach(el => el.style.display = "none");
+            document.querySelector(".icons").style.backgroundColor = "";
+        }
+    })
 }
