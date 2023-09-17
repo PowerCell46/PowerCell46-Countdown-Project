@@ -19,6 +19,7 @@ body {
 }
 
 #title {
+    cursor: pointer;
     padding-top: 5px;
     font-family: 'Dancing Script', cursive;
     letter-spacing: 5px;
@@ -151,14 +152,28 @@ li:hover {
     align-items: center;
 }
 
+#showHiddenIcons {
+    cursor: pointer;
+    transition: 400ms ease-in-out;
+}
+
+#hiddenIcon {
+    display: none;
+}
+
 .icons {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     gap: 30px;
-    margin-top: -21%;
     margin-right: 85%;
+    padding: 20px 20px;
+    border-radius: 10px;
+}
+
+.icons:hover {
+    transform: translateY(-5px);
 }
 
 .icons a {
@@ -187,7 +202,7 @@ li:hover {
 
 @media (min-width: 1400px) {
     .icons {
-        margin-top: -17.7%;
+        margin-top: -23%;
         margin-right: 88%;
     }
 
@@ -235,7 +250,7 @@ li:hover {
     }
 
     .icons {
-        margin-top: -15.8%;
+        margin-top: -20.5%;
         margin-right: 88.5%;
     }
 
@@ -318,12 +333,13 @@ li:hover {
         flex-direction: row;
         margin-top: 68%;
         margin-left: 85%;
-        justify-content: space-between;
+        gap: 10px;
+        /* justify-content: space-between; */
     }
 
     .icons a {
-        width: 50px;
-        height: 50px;
+        width: 55px;
+        height: 55px;
     }
 
     .icons i {
@@ -333,7 +349,7 @@ li:hover {
     nav {
         width: 96vw;
         display: flex;
-        margin-top: 52%;
+        margin-top: 55%;
         gap: -15px;
         justify-content: space-between;
     }
@@ -363,7 +379,7 @@ li:hover {
     }
 
     nav {
-        margin-top: 8%
+        margin-top: 10%
     }
 
     li {
