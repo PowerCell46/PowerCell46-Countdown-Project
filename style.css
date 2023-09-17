@@ -388,4 +388,8 @@ li:hover {
         margin-top: 18%;
         font-size: 60px;
     }
+
+    .container {
+        margin-top: 10%;
+    }
 }
