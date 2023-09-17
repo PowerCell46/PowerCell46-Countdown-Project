@@ -22,6 +22,10 @@ function initialize() {
        
         } else { // Starting the timer
             seconds = Number(document.querySelector('input[name="hours"]').value) * 3600 +  Number(document.querySelector('input[name="minutes"]').value) * 60 + Number(document.querySelector('input[name="seconds"]').value);
+            document.querySelector('input[name="hours"]').value = "";
+            document.querySelector('input[name="minutes"]').value = "";
+            document.querySelector('input[name="seconds"]').value = "";
+         
             if (seconds < 1 || seconds > 86400) {
                 return alert("The custom timer must be between 1 second and 24 hours!");
             }
@@ -41,7 +45,7 @@ function initialize() {
             hiddenContainer.style.display = "none";
             clearInterval(interval); // Clearing in case there was another before that
             interval = setInterval(displayRemainingTime, 1000);
-        })
+        });
     });
 
     function displayRemainingTime() {
@@ -101,5 +105,4 @@ function initialize() {
             document.documentElement.style.setProperty("--heading-color", "-webkit-linear-gradient(135deg, rgb(225, 73, 13), rgb(13, 201, 0))");
         }
     });
-    
 }
