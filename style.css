@@ -276,6 +276,28 @@ li:hover {
     }
 }
 
+@media(min-width: 1080px) {
+    .icons {
+        margin-top: -19%;
+    }
+
+    #change-theme {
+        margin-top: 1.1%;
+    }
+
+    #title {
+        margin-top: 2.5%;
+    }
+
+    #custom-time {
+        margin-top: -3%;
+    }
+    
+    nav {
+        margin-top: 10.5%;
+    }
+}
+
 @media (max-width: 500px) {
     #title {
         margin-top: 2.5%;
