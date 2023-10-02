@@ -12,7 +12,7 @@
 
 body {
     transition: 1200ms ease-in-out;
-    background-image: url("https://wallpapers.com/images/featured/simple-clean-8g9017acqfddycrl.jpg");
+    background-image: url("./resourses/simple-clean-green.jpg");
     background-size: cover;
     overflow: hidden;
     color: var(--white-color);
@@ -200,8 +200,6 @@ li:hover {
     font-size: 47px;
 }
 
-
-
 @media (min-width: 2000px) {
     #title {
         margin-top: 2%;
@@ -240,7 +238,7 @@ li:hover {
     }
 
     .icons {
-        margin-top: -19.8%;
+        margin-top: -21%;
         margin-right: 88.5%;
     }
 
@@ -268,9 +266,13 @@ li:hover {
 
 @media (min-width: 1400px)and (max-width: 1950px) {
     .icons {
-        margin-top: -23%;
+        margin-top: -21%;
     
         margin-right: 88%;
+    }
+
+    #change-theme {
+        top: 7%;
     }
 
     nav {
@@ -280,8 +282,9 @@ li:hover {
 }
 
 @media (min-width: 1080px) and (max-width: 1150px) {
-    .icons {
+    .icons {      
         margin-top: -19%;
+
     }
 
     #change-theme {
