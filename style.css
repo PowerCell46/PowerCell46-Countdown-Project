@@ -200,17 +200,7 @@ li:hover {
     font-size: 47px;
 }
 
-@media (min-width: 1400px) {
-    .icons {
-        margin-top: -23%;
-        margin-right: 88%;
-    }
 
-    nav {
-        margin-left: 14.5%;
-        margin-top: 24.5%;
-    }
-}
 
 @media (min-width: 2000px) {
     #title {
@@ -250,7 +240,7 @@ li:hover {
     }
 
     .icons {
-        margin-top: -20.5%;
+        margin-top: -19.8%;
         margin-right: 88.5%;
     }
 
@@ -265,7 +255,7 @@ li:hover {
 
     nav {
         margin-left: 14%;
-        margin-top: 25%;
+        margin-top: 24%;
     }
 
     #change-theme {
@@ -276,7 +266,20 @@ li:hover {
     }
 }
 
-@media(min-width: 1080px) {
+@media (min-width: 1400px)and (max-width: 1950px) {
+    .icons {
+        margin-top: -23%;
+    
+        margin-right: 88%;
+    }
+
+    nav {
+        margin-left: 14.5%;
+        margin-top: 23%;
+    }
+}
+
+@media (min-width: 1080px) and (max-width: 1150px) {
     .icons {
         margin-top: -19%;
     }
