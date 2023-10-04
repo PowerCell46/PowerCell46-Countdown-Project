@@ -12,7 +12,7 @@
 
 body {
     transition: 1200ms ease-in-out;
-    background-image: url("https://wallpapers.com/images/featured/simple-clean-8g9017acqfddycrl.jpg");
+    background-image: url("./resourses/simple-clean-green.jpg");
     background-size: cover;
     overflow: hidden;
     color: var(--white-color);
@@ -272,13 +272,18 @@ li:hover {
     }
 
     #change-theme {
-        top: 7%;
+        top: 7.5%;
     }
 
     nav {
         margin-left: 14.5%;
-        margin-top: 23%;
+        margin-top: 23.5%;
     }
+
+    h2 {
+       top: 25.5%; 
+    }
+
 }
 
 @media (min-width: 1080px) and (max-width: 1150px) {
